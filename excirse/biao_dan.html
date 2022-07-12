@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      * {
+        margin: 5px;
+      }
+      fieldset input {
+        width: 98%;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>student files</legend>
+        <p>name:</p>
+        <input type="text" name="name" placeholder="请输入姓名" />
+        <p>phone:</p>
+        <input type="tel" name="tel" />
+        <p>email:</p>
+        <input type="email" name="email" />
+        <p>score:</p>
+        <input type="number" name="score" value="0" />
+        <p>school:</p>
+        <input type="text" name="school" list="school" />
+        <datalist id="school">
+          <option value="Slytherin"></option>
+          <option value="Gryffindor"></option>
+        </datalist>
+        <p>level:</p>
+        <select>
+          <option value="A">A</option>
+          <option value="B">B</option>
+          <option value="C">C</option>
+        </select>
+        <p>time:</p>
+        <input type="datetime-local" name="time" />
+        <br />
+        <br />
+        <input type="submit" value="提交" />&nbsp;&nbsp;&nbsp;&nbsp;<input
+          type="reset"
+          value="重置"
+        />
+      </fieldset>
+    </form>
+  </body>
+</html>

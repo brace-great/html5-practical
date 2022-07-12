@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        color: #fff;
+      }
+      a {
+        color: rgb(244, 125, 49);
+        text-decoration: none;
+      }
+      .box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 15px solid rgb(204, 204, 204);
+        padding: 5px;
+        background-clip: content-box;
+        background-color: rgb(136, 136, 136);
+      }
+      header,
+      h3,
+      footer {
+        width: 100%;
+        background-color: rgb(244, 125, 49);
+        text-align: center;
+      }
+      h3 {
+        margin: 5px;
+        width: 98%;
+      }
+      main {
+        display: flex;
+        width: 90%;
+        justify-content: space-between;
+      }
+      article {
+        margin-top: 10px;
+        background-color: rgb(238, 238, 238);
+        overflow: hidden;
+      }
+      article section {
+        color: #000;
+      }
+      nav {
+        width: 25%;
+        margin-right: 50px;
+      }
+      h2 {
+        text-align: center;
+      }
+      .zhongxin {
+        margin-bottom: 20px;
+      }
+      aside {
+        width: 30%;
+        position: relative;
+      }
+      aside img {
+        position: absolute;
+        background: tan;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      li {
+        margin-top: 10px;
+        list-style: none;
+        border-bottom: 3px solid rgb(255, 255, 255);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <header>
+        <h1>Header</h1>
+      </header>
+      <main>
+        <nav>
+          <h2>nav</h2>
+          <ul>
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+            <li><a href="#">Link 4</a></li>
+          </ul>
+        </nav>
+        <div class="zhongxin">
+          <article>
+            <section>
+              <div>
+                <h3>Ariticle Header</h3>
+              </div>
+              <img src="语义化标签_2.png" alt="" />
+              <div>
+                <h3>Ariticle Header</h3>
+              </div>
+            </section>
+          </article>
+          <article>
+            <section>
+              <div>
+                <h3>Ariticle Header</h3>
+              </div>
+              &nbsp;&nbsp;文章内容
+              <div>
+                <h3>Ariticle Header</h3>
+              </div>
+            </section>
+          </article>
+        </div>
+        <aside>
+          <h2>Aside</h2>
+          <img src="语义化标签_1.png" alt="" />
+        </aside>
+      </main>
+      <footer>
+        <h1>Footer</h1>
+      </footer>
+    </div>
+  </body>
+</html>

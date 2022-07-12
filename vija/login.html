@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-size: small;
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      main {
+        width: 100%;
+        display: flex;
+
+        justify-content: center;
+      }
+      .left,
+      .right {
+        border: 1px solid rgb(172, 172, 172);
+        margin: 20px;
+        padding: 20px;
+        width: 40%;
+        color: rgb(107, 107, 107);
+      }
+      .left {
+        margin-right: 0px;
+      }
+      button {
+        border: 0;
+      }
+      #b-Vjia {
+        background-image: url(img/login/current.gif);
+        width: 74px;
+        height: 24px;
+        color: aliceblue;
+      }
+      #b-Vancl {
+        background-image: url(img/login/gray.gif);
+        width: 74px;
+        height: 24px;
+        color: gray;
+      }
+      #login {
+        background-color: rgb(250, 250, 250);
+        padding: 10%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      #login div {
+        color: gray;
+        margin: 5px;
+      }
+      #b-login {
+        background-image: url(img/login/btn_bg.gif);
+        width: 80px;
+        height: 25px;
+        color: aliceblue;
+        margin-right: 10px;
+      }
+      #b-login b {
+        font-size: medium;
+      }
+      #register {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+        max-width: 90%;
+      }
+      #register table {
+        border-spacing: 3px 10px;
+      }
+      #register input {
+        width: 100%;
+      }
+
+      #register td:nth-child(1) {
+        width: 40%;
+        text-align: right;
+        color: rgb(69, 69, 69);
+      }
+      #register td:nth-child(2) {
+        font-size: smaller;
+        color: rgb(137, 137, 137);
+      }
+      #b-register {
+        font-size: large;
+        background-color: #a10000;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-weight: 1000;
+        margin-top: 5px;
+        width: auto !important;
+      }
+      footer {
+        text-align: center;
+      }
+      footer a {
+        color: gray;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="left">
+        <div><img src="img/login/vjia.gif" /></div>
+        <hr style="margin-bottom: 30px" />
+
+        <button id="b-Vjia">Vjia用户</button>
+        <button id="b-Vancl">Vancl用户</button>
+        <hr style="border-color: red; position: relative; top: -1px" />
+        <form id="login">
+          <div>
+            用户名:
+            <input type="text" name="username" />
+          </div>
+          <br />
+          <div>
+            密码:
+            <input type="password" name="password" />
+          </div>
+          <br />
+
+          <div>
+            <button id="b-login" type="submit"><b>登录</b></button
+            ><a href="#">忘记密码了?</a>
+          </div>
+        </form>
+        <p style="margin-top: 10px">
+          使用合作伙伴账号登录Vjia：<a
+            ><img src="img/login/account_qq.gif"
+          /></a>
+        </p>
+        <br />
+        <p style="color: rgb(186, 0, 0)">温馨提示：</p>
+        <p style="color: rgb(154, 154, 154); text-indent: 2em">
+          如果还未注册VJIA用户，您可以使用VANCL用户名进行登录，登录后系统会自动为您注册一个与VANCL帐户相关联的VJIA帐户。帐户关联后您可共享VANCL的会员积分和消费金额。
+        </p>
+        <br />
+        <p style="float: right; color: rgb(154, 154, 154)">
+          有任何疑问请点击 <a href="#">帮助中心</a> 或 <a href="#">联系客服</a>
+        </p>
+      </div>
+      <div class="right">
+        <div><img src="img/login/pic_zc.gif" /></div>
+        <hr />
+        <form id="register">
+          <table>
+            <tr>
+              <td>请填写您的Email地址:</td>
+              <td>
+                <input type="email" />
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td style="">
+                请填写有效的Email地址作为下次登录的用户名，同时我们也会给这个地址发送您的帐户信息、订单通知等。
+              </td>
+            </tr>
+            <tr>
+              <td>请设定密码:</td>
+              <td><input type="password" /></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>密码请设为6-16位字母或数字</td>
+            </tr>
+            <tr>
+              <td>请再次输入设定密码:</td>
+              <td><input type="password" /></td>
+            </tr>
+            <tr>
+              <td>请输入验证码:</td>
+              <td style="display: flex; align-items: center">
+                <input type="text" />
+                <div>
+                  <img src="img/login/code_img.gif" /><a
+                    style="display: block; position: absolute"
+                    href="#"
+                    >看不清换一张</a
+                  >
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2" style="text-align: center; padding-top: 50px">
+                请阅读<a href="#" style="color: red; text-decoration: underline"
+                  >《"V+网站"服务条款》</a
+                ><br />
+                <input
+                  id="b-register"
+                  type="submit"
+                  value="同意以上条款并注册"
+                />
+              </td>
+            </tr>
+          </table>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <ul>
+        <li style="padding: 10px">
+          <a href="#">首页</a> | <a href="#">客户服务</a>&nbsp;|&nbsp;<a
+            href="#"
+            >品牌合作</a
+          >
+          |&nbsp;<a href="#">网站联盟</a> |<a href="#">投诉与建议</a>
+        </li>
+        <li style="color: gray">
+          Copyright © 2011 vjia.com All Rights Reserved 京ICP备08000757号
+          京公网安备110105005926
+        </li>
+        <li style="padding: 10px">
+          <a href="#"
+            ><img
+              src="img/login/btm_logo_1.gif"
+              alt="网上交易保障中心"
+              width="92"
+              height="45"
+          /></a>
+          <a href="#"
+            ><img
+              src="img/login/btm_logo_2.gif"
+              alt="经营性网站备案信息"
+              width="96"
+              height="45"
+          /></a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
